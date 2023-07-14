@@ -1,16 +1,18 @@
 #include <stdio.h>
 /**
 * main - runs main code
-* Return - returns the value 0
+* Return - returns 0
 */
 
 int main(void)
 {
-	int a;
+	char c;
 
-	for (a = 48; a < 58; a++)
-		putchar(a);
+	for (c = 'z'; c >= 'a'; c--)
+		putchar(c);
+
 	putchar('\n');
 
 	return (0);
 }
+
