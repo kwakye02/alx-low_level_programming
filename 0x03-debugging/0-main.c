@@ -1,6 +1,7 @@
 #include "main.h"
 /**
 *main - runs the main code
+*
 *Return: returns 0
 */
 int main(void)
