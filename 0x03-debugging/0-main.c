@@ -5,6 +5,10 @@
 */
 int main(void)
 {
-	postitive_or_negative(int n)
-	return (0)
+	int i;
+
+	i = 0;
+
+	postitive_or_negative(i);
+	return (0);
 }
