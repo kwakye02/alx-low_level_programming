@@ -5,9 +5,7 @@
 */
 void print_numbers(void)
 {
-	int c;
-
-	c = 0;
+	int c = 0;
 
 	do {
 		_putchar(c + 48);
@@ -15,5 +13,4 @@ void print_numbers(void)
 	} while (c >= 0 && c <= 9);
 	_putchar('\n');
 
-	return (0);
 }
