@@ -27,7 +27,10 @@ int main(void)
 		{
 			printf("%d", n);
 		}
+		if (i != 100)
+			printf(" ");
 	}
+	printf("\n")
 
 	return (0);
 }
