@@ -13,7 +13,7 @@ void print_rev(char *s)
 		len = len + 1;
 		s++;
 	}
-/*	s = s + (len-1); */
+	s = s - 1;
 
 	for (i = 0; i <= len ; i++)
 	{
