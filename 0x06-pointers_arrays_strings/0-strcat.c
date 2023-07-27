@@ -6,22 +6,18 @@
 * Return: returns a string pointer
 */
 char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-	int i = 0;
-	int len = 0;
+	int i, j;
 
-	while (dest[len] != '\0')
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+	for (j = 0; src[j] != '\0'; j++)
 	{
-		len++;
-	}
-
-	while (src[i] != '\0')
-	{
-		dest[len + i] = src[i];
+		dest[i] = src[j];
 		i++;
 	}
 
-	dest[len + i] = '\0';
-
+	dest[i] = '\0';
 	return (dest);
 }
