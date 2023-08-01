@@ -3,8 +3,8 @@
 /**
 * _strspn -  gets the length of a prefix substring
 * @s: main string pointer
-* @accept: special string pointer 
-* @Return: return len
+* @accept: special string pointer
+* Return: return n
 */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -19,14 +19,14 @@ unsigned int _strspn(char *s, char *accept)
 				n = n + 1;
 				break;
 			}
-			j++
+			j++;
 		}
 
 		if (accept[j] == '\0')
 		{
 			break;
 		}
-		i++
+		i++;
 
 	}
 	return (n);
