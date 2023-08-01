@@ -3,6 +3,7 @@
 * _memset - fills memory with  a constant byte
 * @s: pointer to a string array
 * @n: lenght of array
+* @b: constant byte
 * Return: returns s
 */
 char *_memset(char *s, char b, unsigned int n)
