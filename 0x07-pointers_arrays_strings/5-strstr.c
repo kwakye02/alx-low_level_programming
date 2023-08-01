@@ -9,24 +9,26 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	char *result = NULL;
+	char *substring = NULL;
+	const char *n = needle;
+	const char *h = haystack;
 
 	while (*haystack != '\0')
 	{
 
-		while (*needle != '\0' && *needle == *haystack)
+		while (*n != '\0' && *n == *h)
 		{
-			needle++;
-			haystack++;
+			n++;
+			h++;
 
 		}
 		if (*needle == '\0')
 		{
-			result = (char *)haystack;
+			substring = (char *)haystack;
 			break;
 		}
 		haystack++;
 	}
-	return (NULL);
+	return (substring);
 
 }
