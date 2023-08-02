@@ -9,12 +9,11 @@
 */
 char *_strstr(char *haystack, char *needle)
 {
-	char *substring = NULL;
-	const char *n = needle;
-	const char *h = haystack;
 
 	while (*haystack != '\0')
 	{
+		char *n = needle;
+		char *h  = haystack;
 
 		while (*n != '\0' && *n == *h)
 		{
@@ -22,13 +21,12 @@ char *_strstr(char *haystack, char *needle)
 			h++;
 
 		}
-		if (*needle == '\0')
+		if (*n == '\0')
 		{
-			substring = (char *)haystack;
-			break;
+			return(haystack);
 		}
 		haystack++;
 	}
-	return (substring);
+	return (NULL);
 
 }
