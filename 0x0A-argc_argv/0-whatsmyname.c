@@ -6,8 +6,10 @@
 *@argv: stores the arguments
 *Return: returns 0
 */
-int main(__attribute__((unused))int argc, char *argv[])
+int main(int argc, char *argv[])
 {
+	(void)argc;
+
 	printf("%s \n", *argv);
 
 	return (0);
