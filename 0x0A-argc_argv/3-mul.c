@@ -5,7 +5,7 @@
 *main - runs main code
 *@argc: counts number of arguments
 *@argv: stores the arguments
-*Return: returns 1 or the sum of numbers
+*Return: returns 1 or the product of numbers
 */
 int main(int argc, char *argv[])
 {
@@ -16,13 +16,12 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else
+
+	for (i = 1; i < argc; i++)
 	{
-		for (i = 1; i < argc; i++)
-		{
-			mult *= atoi(argv[i]);
-		}
+		mult *= atoi(argv[i]);
 	}
+
 	printf("%d\n", mult);
 	return (mult);
 }
