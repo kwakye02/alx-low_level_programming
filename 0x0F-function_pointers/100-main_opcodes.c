@@ -32,10 +32,10 @@ int main(int argc, char *argv[])
 	{
 		if (i == num - 1)
 		{
-			printf("%02hhx\n", ptr[x]);
+			printf("%02hhx\n", ptr[i]);
 			break;
 		}
-		printf("%02hhx ", ptr[x]);
+		printf("%02hhx ", ptr[i]);
 	}
 	return (0);
 }
