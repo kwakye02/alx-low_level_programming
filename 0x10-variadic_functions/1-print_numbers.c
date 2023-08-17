@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
-* print_numbers - prints numbers
-* @separator: takes the new line character 
+*print_numbers - prints numbers
+*@separator: takes the new line character
 *@n: number of args to be passed
 *Return: nothing
 */
