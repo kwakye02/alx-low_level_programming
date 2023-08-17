@@ -8,7 +8,7 @@
 */
 void print_all(const char * const format, ...)
 {
-	char *str_arg;
+	char *str_arg, *sep = "";
 	float float_arg;
 	char char_arg;
 	va_list arg;
@@ -22,27 +22,25 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				char_arg = va_arg(arg, int);
-				printf("%c", char_arg);
+				printf("%s%c", sep, char_arg);
 				break;
 			case 'i':
 				int_arg = va_arg(arg, int);
-				printf("%d", int_arg);
+				printf("%s%d", sep, int_arg);
 				break;
 			case 'f':
 				float_arg = va_arg(arg, double);
-				printf("%f", float_arg);
+				printf("%s%f", sep, float_arg);
 				break;
 			case 's':
 				str_arg = va_arg(arg, char *);
 				if (str_arg == NULL)
 					printf("(nil)");
 				else
-					printf("%s", str_arg);
+					printf("%s%s", sep, str_arg);
 				break;
 		}
-		if (format[i + 1] && (format[i] == 'c' || format[i] == 'i' ||
-					format[i] == 'f' || format[i] == 's'))
-			printf(", ");
+		sep = ", ";
 		i++;
 	}
 	va_end(arg);
