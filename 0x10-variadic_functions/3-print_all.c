@@ -1,3 +1,5 @@
+#include <stddef.h>
+#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -37,7 +39,7 @@ void print_all(const char * const format, ...)
 				case 's':
 					str_arg = va_arg(arg, char *);
 					if (str_arg == NULL)
-						printf("(nil)");
+						str_arg = "(nil)";
 					printf("%s%s", sep, str_arg);
 					break;
 			}
