@@ -14,12 +14,11 @@ void print_all(const char * const format, ...)
 	float float_arg;
 	char char_arg;
 	va_list arg;
-	int int_arg, i;
+	int int_arg, i = 0;
 
 	va_start(arg, format);
 	if (format)
 	{
-		i = 0;
 		while (format[i] != '\0')
 		{
 			switch (format[i])
@@ -42,9 +41,11 @@ void print_all(const char * const format, ...)
 						str_arg = "(nil)";
 					printf("%s%s", sep, str_arg);
 					break;
-			}
+				default:
+					i++;
+					continue;
+			} i++;
 			sep = ", ";
-			i++;
 		}
 	}
 	printf("\n");
