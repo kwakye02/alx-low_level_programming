@@ -6,7 +6,7 @@
 */
 size_t listint_len(const listint_t *h)
 {
-	const lisint_t *temp;
+	const listint_t *temp;
 	size_t count = 0;
 
 	temp = h;
