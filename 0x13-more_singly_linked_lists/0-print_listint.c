@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
 *print_listint - prints all elements of a list
-*@h - list being used
-*@Return: the number of nodes
+*@h: list being used
+*Return: the number of nodes
 */
 size_t print_listint(const listint_t *h)
 {
@@ -12,7 +12,10 @@ size_t print_listint(const listint_t *h)
 	temp = h;
 	while (temp != NULL)
 	{
-		printf("%d\n", temp->n);
+		if (temp->n != 0)
+		{
+			printf("%d\n", temp->n);
+		}
 		temp = temp->next;
 		i++;
 	}
