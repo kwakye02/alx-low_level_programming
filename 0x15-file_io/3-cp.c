@@ -1,4 +1,8 @@
 #include "main.h"
+
+#define STDERR_FILE STDERR_FILENO
+#define MAX_BUFFER_SIZE 1204
+
 /**
 *main -copies the content of one file to another
 *@argc: The number of arguments count
