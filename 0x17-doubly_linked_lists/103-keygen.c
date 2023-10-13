@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * main - generate a key depending on a username for crackme5
- * @argc: the number of arguments 
- * @argv: arguments passed to the function
+* main - generate a key depending on a username for crackme5
+* @argc: the number of arguments
+* @argv: arguments passed to the function
 * Return: 0 or 1
  */
 int main(int argc, char *argv[])
